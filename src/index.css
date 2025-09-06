@@ -118,3 +118,8 @@ color utility to any element that depends on these defaults.
     /* @apply font-heading; */
   }
 }
+
+/* Added bg-card utility class for opaque card backgrounds */
+.bg-card {
+  background-color: var(--card);
+}

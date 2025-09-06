@@ -389,13 +389,14 @@ export default function CartCheckout() {
                               Quantity
                             </Label>
                             <Select
+                              className="bg-white"
                               value={item.quantity.toString()}
                               onValueChange={(value) => updateQuantity(item.id, parseInt(value))}
                             >
                               <SelectTrigger className="w-20">
                                 <SelectValue />
                               </SelectTrigger>
-                              <SelectContent>
+                              <SelectContent className="bg-white text-foreground rounded-md shadow-lg">
                                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(num => (
                                   <SelectItem key={num} value={num.toString()}>
                                     {num}

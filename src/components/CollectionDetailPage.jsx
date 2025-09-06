@@ -501,7 +501,7 @@ export const CollectionDetailPage = ({
               <SelectTrigger className="w-[180px]">
                 <SelectValue />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent className="bg-card text-foreground rounded-md shadow-lg">
                 <SelectItem value="newest">Newest First</SelectItem>
                 <SelectItem value="price-low">Price: Low to High</SelectItem>
                 <SelectItem value="price-high">Price: High to Low</SelectItem>

@@ -539,18 +539,18 @@ export default function ProductDetailPage({
                     Size Guide
                   </Button>
                 </div>
-                <Select value={selectedSize} onValueChange={setSelectedSize}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select size" />
-                  </SelectTrigger>
-                  <SelectContent className="bg-background text-foreground rounded-lg shadow-lg">
-                    {productData.sizes.map((size) => (
-                      <SelectItem key={size} value={size}>
-                        {size}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                  <Select value={selectedSize} onValueChange={setSelectedSize}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select size" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-card text-foreground rounded-md shadow-lg">
+                      {productData.sizes.map((size) => (
+                        <SelectItem key={size} value={size}>
+                          {size}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
               </div>
             )}
 
@@ -837,7 +837,7 @@ export default function ProductDetailPage({
                       <SelectTrigger className="w-40">
                         <SelectValue />
                       </SelectTrigger>
-                      <SelectContent className="bg-background text-foreground rounded-lg shadow-lg">
+                      <SelectContent className="bg-card text-foreground rounded-md shadow-lg">
                         <SelectItem value="all">All Reviews</SelectItem>
                         <SelectItem value="5">5 Stars</SelectItem>
                         <SelectItem value="4">4 Stars</SelectItem>
